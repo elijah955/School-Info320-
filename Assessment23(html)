@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assessment 23</title>
+	<link rel="stylesheet" type="text/css" href="monthTable.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$("document").ready(function() {
+			$("#date tr:even").addClass('stripe1');
+			$("#date tr:odd").addClass('stripe2');
+			//highlight next on hover
+			$('#date tr').hover(
+			function(){
+			$(this).toggleClass('highlight');
+			});
+			//add display alert box when clicked
+			$('#date').on('click','tr', function showText(event){
+			alert($(this).text());
+			});
+			});
+
+	</script>
+</head>
+<body>
+<h1>Simple Striping & Highlighting</h1>
+<table id="date">
+	<tr>
+		<th>Month</th>
+		<th>Days</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>February</td>
+		<td>28</td>
+	</tr>
+	<tr>
+		<td>March</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>April</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>May</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>June</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>July</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>August</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>September</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>October</td>
+		<td>31</td>
+	</tr>
+	<tr>
+		<td>November</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>December</td>
+		<td>30</td>
+	</tr>
+</table>
+</body>
+</html>
