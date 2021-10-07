@@ -1,0 +1,25 @@
+table, th, td {
+	border: 1px solid #000;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+table {
+	width: 25%;
+}
+
+th {
+	background: #a7b0aa;
+}
+
+.stripe1 {
+	background: #7a9682;
+}
+
+.stripe2{
+	background: #9ce6b2;
+}
+
+.highlight{
+	background: #e0e388;
+}
